@@ -18,6 +18,8 @@ $4whatever = 20;                     # or underscore
 $email-address = "example@mail.com"; # no sir! Not allowed - character
 $gome url = 'some http address';     # Same here, using spaces is not allowed
 
+
+
 # 2.2 Declaring Variables
 # it is not necessary to declare a variable before using it
 
@@ -45,4 +47,27 @@ my $color = 'red';
 print = "My foavorite color is " + $colour + ". And yours?";
 
 # 'my' is used for declaring a local scope variable
+
+
+
+# 2.3 Perl variable scopes
+# similar to other languages, it works as it follows:
+
+use warnings;
+
+$color1 = 'red';
+
+print('my first favorite color is ' . $color1);
+
+# in other block
+{
+    my $color1 = 'blue';
+    print(" My 2d favorite color is: " . $color1);
+
+}
+
+# then, we can check it
+
+print('my first favorite color is ' . $color1);
+
 
