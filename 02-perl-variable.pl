@@ -71,3 +71,16 @@ print('my first favorite color is ' . $color1);
 print('my first favorite color is ' . $color1);
 
 
+
+# 2.4 perl variable interpolation
+# Similar to js
+
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+
+my $amount = 20;
+my $s = "the amount is $amount\n";
+print($s);
+
